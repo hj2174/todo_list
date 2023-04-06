@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나만의 Todo list</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>나만의 Todo list</title>
+	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <script src="./main.js"></script>
+	<div class="wrapper">
+
+		<header>
+			<h1>hj2의 Todo list</h1>
+		</header>
+
+		<section>
+			<div class="input_container">
+				<input type="text" class="add_value" placeholder="할일 추가하기" autofocus>
+				<button type="button" class="add_btn" onclick="add_list">
+					<i>+</i>
+				</button>
+			</div>	
+			<div class="">
+				<ul class="registered_list">
+					<li>
+						<div class="registered"></div>
+					</li>
+				</ul>
+
+			</div>
+		</section>
+
+		<footer>
+			<button class="all_clear" onclick="all_clear()">
+				초기화
+			</button>
+		</footer>
+
+	</div>
+
+	<script src="./main.js"></script>
 </body>
 </html>
