@@ -11,21 +11,19 @@
 	<div class="wrapper">
 
 		<header>
-			<h1>hj2의 Todo list</h1>
+			<h1>Todo list</h1>
 		</header>
 
 		<section>
 			<div class="input_container">
-				<input type="text" class="add_value" placeholder="할일 추가하기" autofocus>
-				<button type="button" class="add_btn" onclick="add_list">
+				<input type="text" class="add_value" placeholder="할일 추가하기" onkeyup="enterkey();" autofocus>
+				<button type="button" class="add_btn" onclick="add_list()">
 					<i>+</i>
 				</button>
 			</div>	
 			<div class="">
 				<ul class="registered_list">
-					<li>
-						<div class="registered"></div>
-					</li>
+					<!-- 추가된 할일 리스트 공간 -->
 				</ul>
 
 			</div>
