@@ -15,6 +15,7 @@ function add_list(){
 
 		title.innerHTML = add_value.value;
 		check.type = "checkbox";
+		
 
 		registered.appendChild(list); 
 		list.appendChild(check);
@@ -29,8 +30,8 @@ function add_list(){
 
 		list.addEventListener("click", function(){   //할일 완료 후 클릭시 밑줄로 표시
 			title.style.textDecoration = "line-through";
-			title.style.color = "red";  //클릭시 색변환
-
+			title.style.color = "grey";  //클릭시 색변환
+			check.checked = true; // 클릭시 체크 표시
 		})
 	}
 }
